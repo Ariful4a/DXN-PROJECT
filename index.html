@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DXN project</title>
+    <link rel="icon" type="image/png" href="images/download.png">
+    <!-- tailwind and desy link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google fonts link  -->
+    <!-- popins  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- roboto link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+
+        .font{
+            font-family: "Poppins", serif;
+        }
+        .poppins-extrabold {
+            font-family: "Poppins", serif;
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        .roboto-bold {
+            font-family: "Roboto", serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .banner img{
+            width: 100%;
+            height: 500px;
+        }
+        .nav-content ul li a{
+            position: relative;
+        }
+        .nav-content ul li a::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background-color: green;
+            left: 0;
+            bottom: -4px;
+            opacity: 0;
+        }
+
+        .nav-content ul li:hover a::after{
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- nav bar  -->
+    <header class="shadow-lg">
+        <nav class="max-w-6xl mx-auto">
+            <!-- left side  -->
+            <!-- main div  -->
+            <div class="flex justify-between">
+                <div>
+                    <!-- logo -->
+                    <img src="images/download.png" class="w-20 py-2" alt="Logo">
+                </div>
+                <div class="flex items-center nav-content">
+                    <ul class="flex space-x-7 roboto-bold dark:text-white">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Information</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Gallary</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                    <li class="list-none pl-4"><button class="bg-blue-500 p-2 px-4 rounded-lg text-white font-bold">Join Us</button></li>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main content  -->
+     <main>
+        <!-- banner section  -->
+         <section class="banner">
+            <div>
+                <div class="carousel w-full">
+                    <div id="slide1" class="carousel-item relative w-full">
+                      <img
+                        src="images/banner1.webp"
+                        class="w-full" />
+                      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                      </div>
+                    </div>
+                    <div id="slide2" class="carousel-item relative w-full">
+                      <img
+                        src="images/banner2.webp"
+                        class="w-full" />
+                      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                      </div>
+                    </div>
+                    <div id="slide3" class="carousel-item relative w-full">
+                      <img
+                        src="images/banner3.webp"
+                        class="w-full" />
+                      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                      </div>
+                    </div>
+                    <div id="slide4" class="carousel-item relative w-full">
+                      <img
+                        src="images/banner1.webp"
+                        class="w-full" />
+                      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+         </section>
+
+         <!-- dxn Information  -->
+         <section class="bg-blue-50 py-12">
+            <div class="container mx-auto px-4 text-center">
+              <h2 class="text-4xl font-semibold text-gray-800 mb-6">DXN এর উপকারিতা</h2>
+              <p class="text-lg text-gray-700 mb-8">
+                DXN কোম্পানি বিশ্বের শীর্ষস্থানীয় স্বাস্থ্য সেবা এবং ব্যবসায়িক সুযোগ প্রদান করে। DXN এর পণ্যগুলোর মধ্যে রয়েছে প্রাকৃতিক উপাদান যা শরীরের সুস্থতা এবং মানসিক শান্তির জন্য অত্যন্ত উপকারী।
+              </p>
+              <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                  <h3 class="text-2xl font-semibold text-gray-800 mb-4">স্বাস্থ্য সেবা</h3>
+                  <p class="text-gray-700 mb-4">
+                    DXN এর গ্যানোডার্মা মাশরুম, কোর্সা, এবং অন্যান্য প্রাকৃতিক উপাদানগুলি স্বাস্থ্য ও সুস্থতার জন্য অত্যন্ত কার্যকরী। এটি দেহের রোগ প্রতিরোধ ক্ষমতা বৃদ্ধি করে এবং শারীরিক শক্তি এবং প্রাণশক্তি বজায় রাখে।
+                  </p>
+                  <img src="images/1.jpg" alt="Health Benefits" class="w-full mt-4 rounded-lg">
+                  <img src="images/10.jpg" alt="Health Benefits" class="w-full mt-4 rounded-lg">
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                  <h3 class="text-2xl font-semibold text-gray-800 mb-4">ব্যবসায়িক সুযোগ</h3>
+                  <p class="text-gray-700 mb-4">
+                    DXN ব্যবসা শুরু করার মাধ্যমে আপনি আপনার নিজস্ব স্বাধীন ব্যবসা তৈরি করতে পারেন। এর মাধ্যমে আপনি অসীম আয়ের সুযোগ পেতে পারেন এবং পৃথিবীর যে কোন স্থান থেকে ব্যবসা পরিচালনা করতে পারবেন।
+                  </p>
+                  <img src="images/2.jpg" alt="Business Opportunities" class="w-full mt-4 rounded-lg">
+                  <img src="images/11.jpg" alt="Business Opportunities" class="w-full mt-4 rounded-lg">
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                  <h3 class="text-2xl font-semibold text-gray-800 mb-4">বিশ্বস্ত পণ্য</h3>
+                  <p class="text-gray-700 mb-4">
+                    DXN এর পণ্যগুলি শতাধিক দেশেই জনপ্রিয়। এটি একটি বিশ্বস্ত ব্র্যান্ড যা ক্রেতাদের স্বাস্থ্য ও ভালো থাকার জন্য সর্বোত্তম পণ্য সরবরাহ করে।
+                  </p>
+                  <img src="images/33.jpg" alt="Trusted Products" class="w-full mt-4 rounded-lg">
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <section class="bg-gray-100 py-12">
+            <div class="container mx-auto px-4 text-center">
+              <h2 class="text-4xl font-semibold text-gray-800 mb-6">DXN এ ক্যারিয়ার গড়া</h2>
+              <p class="text-lg text-gray-700 mb-8">
+                DXN এ ক্যারিয়ার গড়তে আপনি নিজেই সিদ্ধান্ত নিতে পারেন কিভাবে আপনার লক্ষ্য অর্জন করবেন। DXN এ ক্যারিয়ার গড়ে আপনাকে সঠিক নির্দেশনা, প্রশিক্ষণ এবং সমর্থন প্রদান করা হবে, যাতে আপনি ব্যবসায়িক সাফল্য অর্জন করতে পারেন।
+              </p>
+              <div class="flex flex-col md:flex-row justify-center gap-10">
+                <div class="bg-white p-6 rounded-lg shadow-md w-72">
+                  <h3 class="text-2xl font-semibold text-gray-800 mb-4">প্রথম ধাপ: পণ্য জানুন</h3>
+                  <p class="text-gray-700">
+                    DXN এর পণ্য সম্পর্কে বিস্তারিত জানুন। এগুলি কিভাবে আপনার এবং আপনার পরিবারের জন্য উপকারী হতে পারে, তা সম্পর্কে শিক্ষিত হোন।
+                  </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md w-72">
+                  <h3 class="text-2xl font-semibold text-gray-800 mb-4">দ্বিতীয় ধাপ: ব্যবসা শুরু করুন</h3>
+                  <p class="text-gray-700">
+                    DXN এর সাথে ব্যবসা শুরু করতে প্রয়োজনীয় পদক্ষেপ নিন। এই পর্যায়ে আপনি একটি নেটওয়ার্ক তৈরি করবেন এবং নতুন গ্রাহক এবং সদস্য সংগ্রহ করবেন।
+                  </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md w-72">
+                  <h3 class="text-2xl font-semibold text-gray-800 mb-4">তৃতীয় ধাপ: নেটওয়ার্ক সম্প্রসারণ</h3>
+                  <p class="text-gray-700">
+                    ব্যবসা সম্প্রসারণ করার জন্য আপনার দল তৈরি করুন এবং নতুন সদস্যদের যোগ দিন। আপনার নেটওয়ার্ক বড় হবে এবং আপনি বৃদ্ধি পাবেন।
+                  </p>
+                </div>
+              </div>
+              <div class="mt-10">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">এটা কেন আপনার জন্য?</h3>
+                <p class="text-lg text-gray-700 mb-4">
+                  DXN একটি বিশ্বমানের প্রতিষ্ঠান, যা আপনাকে সুস্থ জীবনযাপন এবং সৃজনশীল ব্যবসা করার সুযোগ দিচ্ছে। আপনি এখান থেকে উপকৃত হতে পারেন এবং একটি নতুন জীবন শুরু করতে পারেন।
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- next section  -->
+          <section class="bg-sky-50 py-12">
+            <div class="max-w-6xl mx-auto px-4 text-center">
+              <h2 class="text-4xl font-semibold text-gray-800 mb-6">DXN কি এবং কেন আপনার জন্য?</h2>
+              <p class="text-lg text-gray-700 mb-8">
+                DXN একটি বিশ্বব্যাপী সুপরিচিত এবং বিশ্বস্ত প্রতিষ্ঠান যা স্বাস্থ্য সেবা, পুষ্টি এবং ব্যবসায়িক সুযোগ প্রদান করে। DXN এর পণ্যগুলি প্রাকৃতিক উপাদানে সমৃদ্ধ, যা মানুষের শারীরিক এবং মানসিক সুস্থতার জন্য উপকারী।
+              </p>
+              <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                  <h3 class="text-2xl font-semibold text-gray-800 mb-4">বিশ্বমানের স্বাস্থ্য পণ্য</h3>
+                  <p class="text-gray-700 mb-4">
+                    DXN এর পণ্যগুলি বিশেষত গ্যানোডার্মা, কফি, এবং অন্যান্য প্রাকৃতিক উপাদানে তৈরি, যা দেহের শক্তি এবং রোগ প্রতিরোধ ক্ষমতা বৃদ্ধি করে।
+                  </p>
+                  <img src="images/4.jpg" alt="Health Products" class="w-full mt-4 rounded-lg">
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                  <h3 class="text-2xl font-semibold text-gray-800 mb-4">ব্যবসায়িক সুযোগ</h3>
+                  <p class="text-gray-700 mb-4">
+                    DXN এ আপনি একটি স্বাধীন ব্যবসা শুরু করতে পারেন। পণ্য বিক্রি এবং নতুন সদস্য সংগ্রহের মাধ্যমে আপনি অনলাইনে বা অফলাইনে আয়ের সুযোগ পেতে পারেন।
+                  </p>
+                  <img src="images/5.jpg" alt="Business Opportunity" class="w-full mt-4 rounded-lg">
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                  <h3 class="text-2xl font-semibold text-gray-800 mb-4">বিশ্বব্যাপী নেটওয়ার্ক</h3>
+                  <p class="text-gray-700 mb-4">
+                    DXN এর একটি বিশাল আন্তর্জাতিক নেটওয়ার্ক রয়েছে। এতে আপনি বিশ্বের যেকোনো প্রান্ত থেকে ব্যবসা পরিচালনা করতে পারেন এবং অনেক মানুষের সাথে যুক্ত হতে পারেন।
+                  </p>
+                  <img src="images/6.jpg" alt="Global Network" class="w-full mt-4 rounded-lg">
+                  <img src="images/7.jpg" alt="Global Network" class="w-full mt-4 rounded-lg">
+                  <img src="images/9.jpg" alt="Global Network" class="w-full mt-4 rounded-lg">
+                </div>
+              </div>
+              <div class="mt-10">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">DXN এর মাধ্যমে আপনি কীভাবে সফল হতে পারেন?</h3>
+                <p class="text-lg text-gray-700">
+                  DXN এর সাথে যুক্ত হয়ে আপনি ব্যবসায়িক উন্নতি এবং অর্থনৈতিক স্বাধীনতা অর্জন করতে পারেন। এখান থেকে আপনি স্বাস্থ্যকর জীবনযাপন এবং উচ্চ আয় উভয়ই উপভোগ করতে পারবেন।
+                </p>
+              </div>
+              <div class="mt-10">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">এটা শুরু করার সহজ উপায়</h3>
+                <p class="text-lg text-gray-700 mb-4">
+                  DXN এ যোগদান করা খুবই সহজ। শুধু একটি সাইন আপ প্রক্রিয়া সম্পন্ন করুন, আপনার প্রয়োজনীয় পণ্য এবং তথ্য সংগ্রহ করুন, এবং আপনার ব্যবসা শুরু করতে শুরু করুন।
+                </p>
+                <button class="bg-green-500 text-white py-2 px-6 rounded-lg mt-4 hover:bg-green-600">
+                  এখনই যোগ দিন
+                </button>
+              </div>
+            </div>
+          </section>
+          
+          
+     </main>
+
+</body>
+
+</html>

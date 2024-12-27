@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DXN project</title>
+    <link rel="icon" type="image/png" href="images/download.png">
+    <!-- tailwind and desy link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google fonts link  -->
+    <!-- popins  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- roboto link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+
+        .font{
+            font-family: "Poppins", serif;
+        }
+        .poppins-extrabold {
+            font-family: "Poppins", serif;
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        .roboto-bold {
+            font-family: "Roboto", serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .banner img{
+            width: 100%;
+            height: 500px;
+        }
+        .nav-content ul li a{
+            position: relative;
+        }
+        .nav-content ul li a::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background-color: green;
+            left: 0;
+            bottom: -4px;
+            opacity: 0;
+        }
+
+        .nav-content ul li:hover a::after{
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- nav bar  -->
+    <header class="shadow-lg">
+        <nav class="max-w-6xl mx-auto">
+            <!-- left side  -->
+            <!-- main div  -->
+            <div class="flex justify-between">
+                <div>
+                    <!-- logo -->
+                    <img src="images/download.png" class="w-20 py-2" alt="Logo">
+                </div>
+                <div class="flex items-center nav-content">
+                    <ul class="flex space-x-7 roboto-bold dark:text-white">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Information</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Gallary</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                    <li class="list-none pl-4"><button class="bg-blue-500 p-2 px-4 rounded-lg text-white font-bold">Join Us</button></li>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bg-gray-50 py-12">
+            <div class="container mx-auto px-4 text-center">
+              <h2 class="text-4xl font-semibold text-gray-800 mb-6">DXN এর পণ্য</h2>
+              <p class="text-lg text-gray-700 mb-8">
+                DXN এর পণ্যগুলি বিশ্বব্যাপী পরিচিত এবং বিশ্বস্ত। প্রাকৃতিক উপাদান ও গ্যানোডার্মা দ্বারা প্রস্তুত করা, এই পণ্যগুলি আপনাকে স্বাস্থ্যকর জীবনযাপন এবং সামগ্রিক সুস্থতা প্রদান করে।
+              </p>
+          
+              <!-- Product Grid -->
+              <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                  <img src="https://via.placeholder.com/400" alt="Ganoderma Coffee" class="w-full rounded-lg mb-4">
+                  <h3 class="text-2xl font-semibold text-gray-800 mb-4">গ্যানোডার্মা কফি</h3>
+                  <p class="text-gray-700 mb-4">
+                    DXN এর গ্যানোডার্মা কফি স্বাস্থ্যের জন্য অত্যন্ত উপকারী। এটি শরীরের শক্তি বৃদ্ধি করে এবং মানসিক চাপ কমাতে সাহায্য করে।
+                  </p>
+                  <a href="#" class="text-green-500 font-semibold">আরও জানুন</a>
+                </div>
+          
+                <!-- Product 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                  <img src="https://via.placeholder.com/400" alt="Cordyceps" class="w-full rounded-lg mb-4">
+                  <h3 class="text-2xl font-semibold text-gray-800 mb-4">কর্ডিসেপস</h3>
+                  <p class="text-gray-700 mb-4">
+                    কোর্সা (কর্ডিসেপস) একটি প্রাকৃতিক উপাদান যা আপনার শরীরের শক্তি বৃদ্ধি করে এবং শ্বাসতন্ত্রের কার্যকারিতা উন্নত করে।
+                  </p>
+                  <a href="#" class="text-green-500 font-semibold">আরও জানুন</a>
+                </div>
+          
+                <!-- Product 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                  <img src="https://via.placeholder.com/400" alt="DXN Spirulina" class="w-full rounded-lg mb-4">
+                  <h3 class="text-2xl font-semibold text-gray-800 mb-4">DXN স্পাইরুলিনা</h3>
+                  <p class="text-gray-700 mb-4">
+                    DXN স্পাইরুলিনা একটি প্রাকৃতিক অ্যান্টি-অক্সিডেন্ট যা শরীরের রোগ প্রতিরোধ ক্ষমতা বাড়ায় এবং শক্তির মাত্রা বৃদ্ধি করে।
+                  </p>
+                  <a href="#" class="text-green-500 font-semibold">আরও জানুন</a>
+                </div>
+          
+                <!-- Product 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                  <img src="https://via.placeholder.com/400" alt="DXN Toothpaste" class="w-full rounded-lg mb-4">
+                  <h3 class="text-2xl font-semibold text-gray-800 mb-4">DXN টুথপেস্ট</h3>
+                  <p class="text-gray-700 mb-4">
+                    DXN এর টুথপেস্টে রয়েছে গ্যানোডার্মা, যা মুখের স্বাস্থ্য রক্ষা করে এবং দাঁতের ক্ষয়রোধে সহায়তা করে।
+                  </p>
+                  <a href="#" class="text-green-500 font-semibold">আরও জানুন</a>
+                </div>
+          
+                <!-- Product 5 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                  <img src="https://via.placeholder.com/400" alt="DXN Ganoderma Capsules" class="w-full rounded-lg mb-4">
+                  <h3 class="text-2xl font-semibold text-gray-800 mb-4">DXN গ্যানোডার্মা ক্যাপসুল</h3>
+                  <p class="text-gray-700 mb-4">
+                    DXN এর গ্যানোডার্মা ক্যাপসুল শরীরের রোগ প্রতিরোধ ক্ষমতা বাড়ানোর জন্য উপকারী এবং একটি শক্তিশালী অ্যান্টি-অক্সিডেন্ট।
+                  </p>
+                  <a href="#" class="text-green-500 font-semibold">আরও জানুন</a>
+                </div>
+          
+                <!-- Product 6 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                  <img src="https://via.placeholder.com/400" alt="DXN Herba Tea" class="w-full rounded-lg mb-4">
+                  <h3 class="text-2xl font-semibold text-gray-800 mb-4">DXN হার্বা চা</h3>
+                  <p class="text-gray-700 mb-4">
+                    DXN হার্বা চা একটি প্রাকৃতিক চা যা শরীরের তাপমাত্রা নিয়ন্ত্রণ করে এবং পেটের সমস্যার সমাধান দেয়।
+                  </p>
+                  <a href="#" class="text-green-500 font-semibold">আরও জানুন</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+    </main>
+</body>
+</html>
